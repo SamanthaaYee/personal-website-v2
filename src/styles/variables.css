@@ -1,0 +1,23 @@
+:root {
+    /* colours */
+    --background-color: #F6EEE3;
+    --text-color: #212121;
+    --highlight-color: #596dab50;
+    --sticky-yellow: #FEF8AC;
+    --sticky-pink: #FBE3F0;
+    --sticky-blue: #CCEDFF;
+
+    /* shadows */
+    --paper-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.1),
+    0 4px 8px rgba(0, 0, 0, 0.15),
+    0 10px 20px rgba(0, 0, 0, 0.2);
+    --sticky-shadow:
+    3px 3px 8px rgba(0,0,0,0.25),
+    -1px 5px 10px rgba(0,0,0,0.1);
+
+    /* fonts */
+    --cursive-font: 'La Belle Aurore', cursive;
+    --handwriting-font: 'Edu SA Beginner', sans-serif;
+    --serif-font: 'Crimson Text', serif;
+}

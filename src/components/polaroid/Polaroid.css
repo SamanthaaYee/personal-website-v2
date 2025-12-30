@@ -1,0 +1,30 @@
+@import url('/src/styles/variables.css');
+
+.polaroid{
+    background-color: white;
+    padding: 1rem 1rem 0 1rem;
+    display: inline-block;
+    box-shadow: var(--paper-shadow);
+    transform: rotate(var(--polaroid-rotate));
+    font-family: var(--cursive-font);
+}
+
+.polaroid-content {
+    display: flex;
+    flex-direction: column;
+    max-width: min-content;
+}
+
+.polaroid-image{
+    width: auto;
+}
+
+.polaroid-caption {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.polaroid-caption h2 {
+    font-weight: normal;
+    margin: 0;
+}

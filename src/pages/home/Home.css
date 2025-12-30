@@ -1,0 +1,24 @@
+h1 {
+    margin: 0;
+}
+
+.heading {
+    margin: 2rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.content-container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10rem;
+}
+
+.content-container .stickies-container {
+    display: flex;
+}
+
+.stickies-container .previous-intro {
+    align-self: flex-end;
+}

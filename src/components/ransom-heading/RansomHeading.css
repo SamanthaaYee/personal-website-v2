@@ -1,0 +1,161 @@
+/* Container */
+#ransomizer-skcbju0n {
+  --global-text-align: left;
+  /* --global-font-size: 3rem; */
+  position: relative;
+  font-family: var(--cursive-font);
+}
+
+/* Structure */
+#ransomizer-skcbju0n .ts,
+#ransomizer-skcbju0n .tw,
+#ransomizer-skcbju0n .tc {
+  display: inline-block;
+}
+
+#ransomizer-skcbju0n .ts {
+  line-height: normal;
+  word-spacing: 0.7em;
+}
+
+/* Texture overlay */
+#ransomizer-skcbju0n .tc div {
+  position: relative;
+  line-height: 75%;
+}
+
+#ransomizer-skcbju0n .tc div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ===== LETTER STYLES ===== */
+
+.tc.mlvx-0 { filter: drop-shadow(-1px 1px 1px #666); }
+.tc.mlvx-0 div {
+  background-color: #cdd2d5;
+  color: #1c1f21;
+  font-family: "Rye", serif;
+  rotate: -1deg;
+  clip-path: polygon(5% 4%,93% 3%,100% 71%,96% 94%,2% 96%,0 48%);
+  text-transform: lowercase;
+  margin: 0.1em;
+  padding: 0.1em;
+}
+.tc.mlvx-0 div::before {
+  background-image: url(https://www.ransomizer.com/img/texture/nIRJZjA.png);
+}
+
+/* 1 */
+.tc.mlvx-1 div {
+  background-color: #e7dbcf;
+  color: #36291b;
+  font-family: "Rubik", serif;
+  rotate: -3deg;
+  clip-path: polygon(4% 3%,93% 7%,100% 9%,97% 95%,7% 99%,0 8%);
+  font-weight: bold;
+  margin: 0.1em;
+  padding: 0.2em;
+}
+.tc.mlvx-1 div::before {
+  background-image: url(https://www.ransomizer.com/img/texture/56UD0sh.png);
+}
+
+/* 2 */
+.tc.mlvx-2 div {
+  background-color: #b8cacd;
+  color: #0d1213;
+  font-family: "Abril Fatface", serif;
+  rotate: 1deg;
+  clip-path: polygon(6% 2%,97% 7%,100% 93%,94% 97%,7% 94%,0 37%);
+  font-size: 110%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0.1em;
+  padding: 0.2em;
+}
+.tc.mlvx-2 div::before {
+  background-image: url(https://www.ransomizer.com/img/texture/b3FJONj.png);
+}
+
+/* 3 */
+.tc.mlvx-3 div {
+  background-color: #c7c5c8;
+  color: #141315;
+  font-family: "Courier Prime", serif;
+  rotate: 3deg;
+  clip-path: polygon(0 4%,98% 6%,100% 42%,98% 97%,0 95%,0 32%);
+  font-weight: bold;
+  margin: 0.1em;
+  padding: 0.2em;
+}
+.tc.mlvx-3 div::before {
+  background-image: url(https://www.ransomizer.com/img/texture/Tg0fOcU.png);
+}
+
+/* 4 */
+.tc.mlvx-4 div {
+  background-color: #f4f1ec;
+  color: #4e422d;
+  font-family: "Rye", serif;
+  rotate: -1deg;
+  clip-path: polygon(5% 6%,99% 6%,100% 3%,95% 96%,3% 93%,0 15%);
+  margin: 0.1em;
+  padding: 0.1em;
+}
+.tc.mlvx-4 div::before {
+  background-image: url(https://www.ransomizer.com/img/texture/h2wsr9q.png);
+}
+
+/* 5 */
+.tc.mlvx-5 div {
+  background-color: #e7dbcf;
+  color: #36291b;
+  font-family: "Germania One", serif;
+  rotate: -3deg;
+  clip-path: polygon(5% 3%,100% 5%,100% 66%,97% 96%,5% 97%,0 16%);
+  text-transform: uppercase;
+  margin: 0.1em;
+  padding: 0.1em;
+}
+.tc.mlvx-5 div::before {
+  background-image: url(https://www.ransomizer.com/img/texture/Tg0fOcU.png);
+}
+
+/* 6 */
+.tc.mlvx-6 div {
+  background-color: #c7c5c8;
+  color: #141315;
+  font-family: "Crimson Pro", serif;
+  rotate: -3deg;
+  clip-path: polygon(2% 2%,96% 6%,100% 17%,94% 99%,0 95%,0 10%);
+  font-weight: bold;
+  margin: 0.1em;
+  padding: 0.2em;
+}
+.tc.mlvx-6 div::before {
+  background-image: url(https://www.ransomizer.com/img/texture/3EarthF.png);
+}
+
+/* 7 */
+.tc.mlvx-7 div {
+  background-color: #e7dbcf;
+  color: #36291b;
+  font-family: "Rubik", serif;
+  rotate: -2deg;
+  clip-path: polygon(7% 0,93% 4%,100% 51%,94% 98%,1% 95%,0 28%);
+  margin: 0.1em;
+  padding: 0.2em;
+}
+.tc.mlvx-7 div::before {
+  background-image: url(https://www.ransomizer.com/img/texture/b3FJONj.png);
+}
+
+/* 8 */ 
+.tc.mlvx-8 div {
+    font-size: 0.67em;
+    font-weight: bold;
+}
