@@ -3,7 +3,7 @@ import Postcard from '/src/components/postcard/Postcard.jsx';
 
 function Contact() {
   return (
-    <div>
+    <div className="contact-page-container">
       <Postcard />
     </div>
   );
