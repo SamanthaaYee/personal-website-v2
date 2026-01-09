@@ -1,8 +1,13 @@
 :root {
     /* colours */
-    --background-color: #F6EEE3;
-    --text-color: #212121;
-    --highlight-color: #596dab50;
+    --tan-bg: #F6EEE375;
+    --dark-grey: #212121;
+    --navy: #3e4c7a;
+    --navy-highlight: #596dab50;
+    --yellow-highlight: #FFDC7450;
+    --pink-highlight: #F3A6C850;
+    --blue-highlight: #95C8F350;
+
     --sticky-yellow: #FEF8AC;
     --sticky-pink: #FBE3F0;
     --sticky-blue: #CCEDFF;
@@ -20,4 +25,6 @@
     --cursive-font: 'La Belle Aurore', cursive;
     --handwriting-font: 'Edu SA Beginner', sans-serif;
     --serif-font: 'Crimson Text', serif;
+
+    --infinity: 99999px;
 }

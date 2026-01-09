@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar.jsx';
 import Home from './pages/home/Home.jsx';
 import Projects from './pages/projects/Projects.jsx';
 import Contact from './pages/contact/Contact.jsx';
+import Footer from './components/footer/Footer.jsx';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

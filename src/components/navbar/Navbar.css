@@ -5,10 +5,11 @@ nav a {
     padding: 0 0.5rem;
     font-family: var(--cursive-font);
     font-size: 1.5rem;
+    color: var(--dark-grey);
 }
 
 nav a:visited {
-    color: var(--text-color);
+    color: var(--dark-grey);
 }
 
 /* nav a:hover {
@@ -22,13 +23,14 @@ nav a:visited {
     padding: 1rem 0;
 }
 
-.nav-left {
+.nav-icon {
     font-size: 1.5rem;
 }
 
-.nav-right {
+.nav-links {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+    font-weight: 400;
 }
 
 /* .nav-link {
@@ -42,12 +44,46 @@ nav a:visited {
     background-color: var(--highlight-color);
 } */
 
-.nav-link.active, .nav-link:hover{
-    background-color: var(--highlight-color);
-    border-radius: 20px;
+
+
+/* .nav-link.active, .nav-link:hover{
+    border-radius: var(--infinity);
+} */
+
+.nav-link {
+    border-radius: var(--infinity);
+    background: linear-gradient(
+        to right, 
+        var(--highlight-color) 100%
+    ); 
+    background-repeat: no-repeat;
+    /* transition: background-size 0.3s ease-in-out;  */
+    background-size: 0% 100%; 
+    background-position: 0% 100%; 
+}
+
+.nav-link:not(.active):hover {
+    background-size: 100% 100%;
 }
 
 .nav-link.active {
-    font-weight: bold;
+    background-color: var(--highlight-color);
+    /* font-weight: bold; */
 }
 
+.nav-link[data-color="pink"] {
+    --highlight-color: var(--pink-highlight);
+}
+
+.nav-link[data-color="yellow"] {
+    --highlight-color: var(--yellow-highlight);
+}
+
+.nav-link[data-color="blue"] {
+    --highlight-color: var(--blue-highlight);
+}
+
+.nav-logo {
+    height: 3rem;
+    display: flex;
+}

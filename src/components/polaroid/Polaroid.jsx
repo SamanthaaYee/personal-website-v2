@@ -1,22 +1,35 @@
 import React, { useRef, useEffect } from 'react';
 import './Polaroid.css';
+import paperclipImg from '/src/assets/images/paperclip.png';
+import starImg from '/src/assets/images/3d-star.webp';
 
-function Polaroid({ imageSrc, caption, height }) {
+function Polaroid({ imageSrc, caption, height, paperclip=false, star=false, tilt=false }) {
     const polaroidRef = useRef(null);
 
     useEffect(() => {
         if (polaroidRef.current) {
-            const polaroidRotateDeg = (Math.random() * 4 - 2) + 'deg';
-            polaroidRef.current.style.setProperty('--polaroid-rotate', polaroidRotateDeg);
+            if (tilt) {
+                const polaroidRotateDeg = (Math.random() * 4 - 2) + 'deg';
+                polaroidRef.current.style.setProperty('--polaroid-rotate', polaroidRotateDeg);
+            } else {
+                polaroidRef.current.style.setProperty('--polaroid-rotate', '0deg');
+            }
+            if (!caption) {
+                polaroidRef.current.style.setProperty('--polaroid-padding', '0.75rem 0.75rem 3rem 0.75rem');
+            }
+            const randomPosition = (Math.random() * 80 + 10) + '%';
+            polaroidRef.current.style.setProperty('--random-position', randomPosition);
         }
     }, []);
 
     return (
-        <div ref={polaroidRef} className="polaroid">
+        <div ref={polaroidRef} className="polaroid wiggle-animation">
             <div className="polaroid-content">
                 <img src={imageSrc} alt={caption} className="polaroid-image" style={{ height: height }}/>
-                <div className="polaroid-caption"><h2>{caption}</h2></div>
+                {caption && <div className="polaroid-caption"><h2>{caption}</h2></div>}
             </div>
+            {paperclip && <img src={paperclipImg} alt="paperclip" className="paperclip"/>}
+            {star && <img src={starImg} alt="star" className="star"/>}
         </div>
    );
 }

@@ -1,24 +1,23 @@
-h1 {
-    margin: 0;
+h1.heading {
+    margin-bottom: 0;
 }
 
-.heading {
-    margin: 2rem 0;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+h2.subheading {
+    margin-top: 0;
+    margin-bottom: 2rem;
 }
 
-.content-container {
+.home-container {
      display: flex;
      flex-wrap: wrap;
      gap: 10rem;
 }
 
-.content-container .stickies-container {
+.home-container .stickies-container {
     display: flex;
+    gap: 2rem;
 }
 
-.stickies-container .previous-intro {
+.home-container .stickies-container .previous-intro {
     align-self: flex-end;
 }

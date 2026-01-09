@@ -1,0 +1,45 @@
+/* @import url('/src/styles/variables.css');
+
+.photo-strip-container {
+    display: flex;
+    gap: 3rem;
+    
+}
+
+.project-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: var(--paper-shadow);
+}
+
+.photo-strip-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-strip-item img.photo-strip-image {
+    height: auto;
+}
+
+.photo-strip-item h2.photo-strip-title {
+    text-align: center;
+    font-family: var(--cursive-font);
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.project-info {
+    background-color: white;
+    flex: 2;
+    height: fit-content;
+    box-shadow: var(--paper-shadow);
+}
+
+.project-info p {
+    padding: 1rem;
+} */

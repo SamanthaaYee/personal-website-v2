@@ -1,0 +1,49 @@
+.footer-container {
+  padding: 3rem 0 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon.email {
+  background-image: url('/src/assets/icons/email-grey.png');
+}
+
+.icon.email:hover {
+  background-image: url('/src/assets/icons/email-navy.png');
+}
+
+.icon.github {
+  background-image: url('/src/assets/icons/github-grey.png');
+}
+
+.icon.github:hover {
+  background-image: url('/src/assets/icons/github-navy.png');
+}
+
+.icon.linkedin {
+  background-image: url('/src/assets/icons/linkedin-grey.png');
+}
+
+.icon.linkedin:hover {
+  background-image: url('/src/assets/icons/linkedin-navy.png');
+}

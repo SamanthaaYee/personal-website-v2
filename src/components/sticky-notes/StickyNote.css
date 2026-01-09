@@ -9,6 +9,11 @@
     aspect-ratio: 1 / 1;
     width: 15rem;
     transform: rotate(var(--sticky-rotate));
-    font-size: 1.4rem;
     font-family: var(--serif-font);
 }
+
+/* @keyframes wiggle {
+    0%, 100% { transform: rotate(var(--sticky-rotate)); }
+    25% { transform: rotate(calc(var(--sticky-rotate) + 2deg)); }
+    75% { transform: rotate(calc(var(--sticky-rotate) - 2deg)); }
+} */

@@ -18,7 +18,7 @@ function StickyNote({ color = "yellow", children }) {
       }, []);
 
   return (
-    <div className="sticky" style={{ "--sticky-color": STICKY_COLORS[color] }} ref={stickyRef}>
+    <div className="sticky wiggle-animation" style={{ "--sticky-color": STICKY_COLORS[color] }} ref={stickyRef}>
       <div className="sticky-content">
         {children}
       </div>

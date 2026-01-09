@@ -1,0 +1,6 @@
+@import url('/src/styles/variables.css');
+
+.heading {
+    margin-block-start: 1rem;
+    margin-block-end: 2rem;
+}
