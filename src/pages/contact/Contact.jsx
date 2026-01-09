@@ -1,9 +1,10 @@
 import './Contact.css';
+import Postcard from '/src/components/postcard/Postcard.jsx';
 
 function Contact() {
   return (
     <div>
-      <h1>Contact Page</h1>
+      <Postcard />
     </div>
   );
 }

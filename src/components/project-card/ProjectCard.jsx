@@ -7,11 +7,11 @@ function ProjectCard({ projects }) {
         <div class="project-card-container">
             {projects.map((projects, index) => (
                 <div className="project-card" key={index}>
-                    <Polaroid imageSrc={projects.image} height="15rem" />
+                    <Polaroid imageSrc={projects.image} caption={false} height="12rem" wiggle={false}/>
                     <div className="project-info">
-                        <div className="project-title-link">
-                            <h2>{projects.title}</h2>
-                            <a href={projects.link} className="icon rise-animation link-icon" target="_blank" rel="noopener noreferrer"></a>
+                        <div className="project-title-link rise-animation">
+                            <a href={projects.link} className="" target="_blank" rel="noopener noreferrer"><h2>{projects.title}</h2></a>
+                            <a href={projects.link} className="icon link-icon" target="_blank" rel="noopener noreferrer"></a>
 
                         </div>
                         <div className="project-skills">
@@ -20,7 +20,7 @@ function ProjectCard({ projects }) {
                             ))}
                         </div>
                         
-                        <p>{projects.description}</p>
+                        <p className="project-description">{projects.description}</p>
                     </div>
                 </div>
             ))}
