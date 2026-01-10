@@ -32,6 +32,7 @@ body {
     linear-gradient(to bottom, rgba(100, 100, 100, 0.1) 1px, transparent 1px);
     position: relative; 
     z-index: 0; */
+
     /* dotted background */
     background-image: radial-gradient(#21212130 1px, transparent 1px);
     background-size: 20px 20px;
@@ -49,6 +50,10 @@ h1 {
 h3 {
     font-family: var(--cursive-font);
     font-weight: normal;
+}
+
+a {
+    color: var(--navy);
 }
 
 mark {
@@ -72,16 +77,9 @@ mark {
 }
 
 /* animations */
-.wiggle-animation:hover {
-    animation: wiggle 0.75s ease-in-out;
+.rotate-animation {
+    transition: transform 0.25s ease-in-out;
 }
-
-@keyframes wiggle {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(2deg); }
-    75% { transform: rotate(-2deg); }
-}
-
 .rise-animation {
     transition: transform 0.2s ease;
 }
@@ -93,8 +91,3 @@ mark {
 .zoom-animation:hover {
     transform: scale(1.05);
 }
-/* 
-@keyframes zoom {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.05); }
-} */

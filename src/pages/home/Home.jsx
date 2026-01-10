@@ -9,27 +9,28 @@ function Home() {
     <div>
       <div>
         <h1 className="heading">hey, i'm samantha!</h1>
-        <h2 className="subheading"><mark>systems design engineering</mark> student @ <mark>UWaterloo</mark></h2>
+        <h2 className="subheading"><mark>full-stack developer</mark> & <mark>systems design engineering</mark> student @ UWaterloo</h2>
       </div>
       <div className="home-container">
         <Polaroid imageSrc={profilePic} height="27rem" caption="welcome to my website :)" paperclip={true} star={true} tilt={true} />
         <div className="stickies-container">
           <div className="stickies current-intro">
             <StickyNote color="yellow">
-              currently i’m...
+              <h4>currently i’m...</h4>
               <ul>
-                <li>developing front-end experiences @ AGF Investments</li>
-                <li>building this site!</li>
-                <li>searching for summer 2026 internships in front-end, full-stack and SWE!</li>
+                <li>entering my third year</li>
+                <li>building this site lol</li>
+                <li>searching for summer 2026 internships in front-end/full-stack dev & SWE - <a href="./contact">reach out!</a></li>
               </ul>
             </StickyNote>
           </div>
           <div className="stickies previous-intro">
             <StickyNote color="pink">
-              previously i've...
+              <h4>previously i've...</h4>
               <ul>
-                <li>built front-end experiences at Apricotton</li>
-                <li>created UI for Health Canada</li>
+                <li>developed front-end components @ AGF Investments</li>
+                <li>built Shopify e-commerce features @ Apricotton</li>
+                <li>redesigned Canada.ca's Food Guide dashboard</li>
               </ul>
             </StickyNote>
           </div>

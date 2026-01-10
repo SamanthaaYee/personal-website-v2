@@ -16,10 +16,10 @@
 
 .postcard-container p {
     position: absolute;
-    top: 45%;
+    bottom: 10%;
     left: 5%;
     font-family: var(--cursive-font);
-    font-size: 2rem;
+    font-size: 1.6rem;
     transform: rotate(-10deg);
     color: var(--dark-grey);
     text-align: center;
@@ -29,10 +29,11 @@
 form.contact-form {
     position: absolute;
     bottom: 10%;
-    right: 7%;
+    right: 5%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 40%
 }
 
 .contact-form input, textarea, button {
@@ -43,7 +44,7 @@ form.contact-form {
 .contact-form input, textarea {
     border: none;
     border-bottom: 1px solid var(--dark-grey);
-    font-family: var(--cursive-font);
+    font-family: var(--sharpie-font);
     font-size: 1.1rem;
 }
 
@@ -62,10 +63,20 @@ form.contact-form {
     font-size: 0.9rem;
 }
 
-.pin-image {
+.tape-image, .airplane-image {
     position: absolute;
-    top: -4%;
-    left: 2%;
-    transform: translateX(-50%);
-    width: 4rem;
+}
+
+.tape-image {
+    top: -7%;
+    left: -7%;
+    width: 12rem;
+    transform: scaleX(-1);
+}
+
+.airplane-image {
+    width: 65rem;
+    top: 20%;
+    left: -20%;
+    z-index: -1;
 }

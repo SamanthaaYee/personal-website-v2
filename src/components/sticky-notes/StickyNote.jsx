@@ -17,8 +17,21 @@ function StickyNote({ color = "yellow", children }) {
           }
       }, []);
 
+      const handleMouseEnter = () => {
+          if (stickyRef.current) {
+              const hoverRotate = Math.random() > 0.5 ? '2deg' : '-2deg';
+              stickyRef.current.style.setProperty('--hover-rotate', hoverRotate);
+          }
+      };
+
+      const handleMouseLeave = () => {
+          if (stickyRef.current) {
+              stickyRef.current.style.setProperty('--hover-rotate', '0deg');
+          }
+      };
+
   return (
-    <div className="sticky wiggle-animation" style={{ "--sticky-color": STICKY_COLORS[color] }} ref={stickyRef}>
+    <div className="sticky rotate-animation" style={{ "--sticky-color": STICKY_COLORS[color] }} ref={stickyRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <div className="sticky-content">
         {children}
       </div>

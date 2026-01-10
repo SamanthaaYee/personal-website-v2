@@ -11,7 +11,7 @@ function Footer() {
                     <a href="https://www.linkedin.com/in/samanthayee6" className="icon rise-animation linkedin" target="_blank" rel="noopener noreferrer"></a>
                     <a href="https://github.com/SamanthaaYee" className="icon rise-animation github" target="_blank" rel="noopener noreferrer"></a>
                 </div>
-                <p className="highlight-text">Samantha Yee © 2025</p>
+                <p className="copyright-text">Samantha Yee © 2025</p>
             </footer>
         </div>
     );

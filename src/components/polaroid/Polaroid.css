@@ -9,11 +9,9 @@
     font-family: var(--cursive-font);
 }
 
-/* @keyframes wiggle {
-    0%, 100% { transform: rotate(var(--polaroid-rotate)); }
-    25% { transform: rotate(calc(var(--polaroid-rotate) + 2deg)); }
-    75% { transform: rotate(calc(var(--polaroid-rotate) - 2deg)); }
-} */
+.polaroid.rotate-animation:hover {
+    transform: rotate(calc(var(--polaroid-rotate) + var(--hover-rotate)));
+}
 
 .polaroid-content {
     display: flex;

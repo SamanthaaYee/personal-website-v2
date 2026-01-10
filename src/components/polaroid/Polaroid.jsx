@@ -3,7 +3,7 @@ import './Polaroid.css';
 import paperclipImg from '/src/assets/images/paperclip.png';
 import starImg from '/src/assets/images/3d-star.webp';
 
-function Polaroid({ imageSrc, caption, height, paperclip=false, star=false, tilt=false, wiggle=true }) {
+function Polaroid({ imageSrc, caption, height, paperclip=false, star=false, tilt=false, rotate=true }) {
     const polaroidRef = useRef(null);
 
     useEffect(() => {
@@ -22,14 +22,27 @@ function Polaroid({ imageSrc, caption, height, paperclip=false, star=false, tilt
         }
     }, []);
 
+    const handleMouseEnter = () => {
+        if (polaroidRef.current) {
+            const hoverRotate = Math.random() > 0.5 ? '2deg' : '-2deg';
+            polaroidRef.current.style.setProperty('--hover-rotate', hoverRotate);
+        }
+    };
+
+    const handleMouseLeave = () => {
+        if (polaroidRef.current) {
+            polaroidRef.current.style.setProperty('--hover-rotate', '0deg');
+        }
+    };
+
     return (
-        <div ref={polaroidRef} className={`polaroid ${wiggle ? 'wiggle-animation' : ''}`}>
+        <div ref={polaroidRef} className={`polaroid ${rotate ? 'rotate-animation' : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className="polaroid-content">
                 <img src={imageSrc} alt={caption} className="polaroid-image" style={{ height: height }}/>
                 {caption && <div className="polaroid-caption"><h2>{caption}</h2></div>}
             </div>
-            {paperclip && <img src={paperclipImg} alt="paperclip" className="paperclip"/>}
-            {star && <img src={starImg} alt="star" className="star"/>}
+            {paperclip && <img src={paperclipImg} alt="paperclip" className="paperclip" draggable="false" />}
+            {star && <img src={starImg} alt="star" className="star" draggable="false" />}
         </div>
    );
 }

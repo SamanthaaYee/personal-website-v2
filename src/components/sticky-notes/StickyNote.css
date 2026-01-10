@@ -12,8 +12,13 @@
     font-family: var(--serif-font);
 }
 
-/* @keyframes wiggle {
-    0%, 100% { transform: rotate(var(--sticky-rotate)); }
-    25% { transform: rotate(calc(var(--sticky-rotate) + 2deg)); }
-    75% { transform: rotate(calc(var(--sticky-rotate) - 2deg)); }
-} */
+.sticky h4 {
+    font-family: var(--sharpie-font);
+    font-weight: normal;
+    margin-block: 0;
+    font-size: 1.3rem;
+}
+
+.sticky.rotate-animation:hover {
+    transform: rotate(calc(var(--sticky-rotate) + var(--hover-rotate)));
+}

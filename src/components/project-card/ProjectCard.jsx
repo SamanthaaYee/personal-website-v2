@@ -7,7 +7,7 @@ function ProjectCard({ projects }) {
         <div class="project-card-container">
             {projects.map((projects, index) => (
                 <div className="project-card" key={index}>
-                    <Polaroid imageSrc={projects.image} caption={false} height="12rem" wiggle={false}/>
+                    <Polaroid imageSrc={projects.image} caption={false} height="12rem" rotate={false}/>
                     <div className="project-info">
                         <div className="project-title-link rise-animation">
                             <a href={projects.link} className="" target="_blank" rel="noopener noreferrer"><h2>{projects.title}</h2></a>

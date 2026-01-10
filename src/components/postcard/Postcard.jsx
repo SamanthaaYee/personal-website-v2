@@ -1,6 +1,7 @@
 import './Postcard.css';
-import postcardImage from '/src/assets/images/postcard.jpg';
-import pin from '/src/assets/images/pin.png';
+import postcardImage from '/src/assets/images/postcard.png';
+import tape from '/src/assets/images/tape.png';
+import airplane from '/src/assets/images/airplane.png';
 
 function Postcard() {
     return (
@@ -19,7 +20,8 @@ function Postcard() {
 
                 <button type="submit">send postcard</button>
             </form>
-            <img src={pin} alt="Pin" className="pin-image" />
+            <img src={tape} alt="tape" className="tape-image" draggable="false" />
+            <img src={airplane} alt="airplane" className="airplane-image" draggable="false" />
         </div>
     )
 }
