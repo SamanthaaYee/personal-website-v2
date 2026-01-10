@@ -1,6 +1,6 @@
 import './Contact.css';
-import Postcard from '/src/components/postcard/Postcard.jsx';
-import airplane from '/src/assets/images/airplane.png';
+
+import Postcard from '../../components/postcard/Postcard';
 
 function Contact() {
   return (

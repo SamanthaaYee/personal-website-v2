@@ -35,25 +35,25 @@ footer p {
 }
 
 .icon.email {
-  background-image: url('/src/assets/icons/email-grey.png');
+  background-image: url('../../assets/icons/email-grey.png');
 }
 
 .icon.email:hover {
-  background-image: url('/src/assets/icons/email-navy.png');
+  background-image: url('../../assets/icons/email-navy.png');
 }
 
 .icon.github {
-  background-image: url('/src/assets/icons/github-grey.png');
+  background-image: url('../../assets/icons/github-grey.png');
 }
 
 .icon.github:hover {
-  background-image: url('/src/assets/icons/github-navy.png');
+  background-image: url('../../assets/icons/github-navy.png');
 }
 
 .icon.linkedin {
-  background-image: url('/src/assets/icons/linkedin-grey.png');
+  background-image: url('../../assets/icons/linkedin-grey.png');
 }
 
 .icon.linkedin:hover {
-  background-image: url('/src/assets/icons/linkedin-navy.png');
+  background-image: url('../../assets/icons/linkedin-navy.png');
 }

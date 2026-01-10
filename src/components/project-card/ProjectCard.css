@@ -43,12 +43,12 @@
 
 
 .icon.link-icon {
-    background-image: url('/src/assets/icons/link-grey.png');
+    background-image: url('../../assets/icons/link-grey.png');
     width: 1.3rem;
 }
 
 .project-title-link:hover .icon.link-icon {
-    background-image: url('/src/assets/icons/link-navy.png');
+    background-image: url('../../assets/icons/link-navy.png');
 }
 
 .project-title-link:hover h2 {

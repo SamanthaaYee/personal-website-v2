@@ -1,26 +1,25 @@
 import './ProjectCard.css';
-import Polaroid from '/src/components/polaroid/Polaroid.jsx';
-import linkIcon from '/src/assets/icons/link-grey.png';
+import Polaroid from '../../components/polaroid/Polaroid';
 
 function ProjectCard({ projects }) {
     return (
-        <div class="project-card-container">
-            {projects.map((projects, index) => (
+        <div className="project-card-container">
+            {projects.map((project, index) => (
                 <div className="project-card" key={index}>
-                    <Polaroid imageSrc={projects.image} caption={false} height="12rem" rotate={false}/>
+                    <Polaroid imgSrc={project.image} altText={project.title} caption={false} height="12rem" rotate={false}/>
                     <div className="project-info">
                         <div className="project-title-link rise-animation">
-                            <a href={projects.link} className="" target="_blank" rel="noopener noreferrer"><h2>{projects.title}</h2></a>
-                            <a href={projects.link} className="icon link-icon" target="_blank" rel="noopener noreferrer"></a>
+                            <a href={project.link} className="" target="_blank" rel="noopener noreferrer"><h2>{project.title}</h2></a>
+                            <a href={project.link} className="icon link-icon" target="_blank" rel="noopener noreferrer"></a>
 
                         </div>
                         <div className="project-skills">
-                            {projects.skills.map((skills, skillIndex) => (
+                            {project.skills.map((skills, skillIndex) => (
                                     <mark className={skillIndex}>{skills}</mark>
                             ))}
                         </div>
-                        
-                        <p className="project-description">{projects.description}</p>
+
+                        <p className="project-description">{project.description}</p>
                     </div>
                 </div>
             ))}

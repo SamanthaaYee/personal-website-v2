@@ -1,0 +1,28 @@
+.hoverable-icon-container {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-group {
+    position: absolute;
+    left: 80%;
+    top: 15%;
+}
+
+.show-on-hover {
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.hoverable-icon:hover ~ .show-on-hover {
+    opacity: 1;
+}
+
+.hoverable-icon {
+    position: relative;
+    transform: rotate(var(--hoverable-icon-rotate));
+}
+
+.hover-text {
+    position: absolute;
+}

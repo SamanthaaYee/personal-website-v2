@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import './Polaroid.css';
-import paperclipImg from '/src/assets/images/paperclip.png';
-import starImg from '/src/assets/images/3d-star.webp';
+import paperclipImg from '../../assets/images/paperclip.png';
+import starImg from '../../assets/images/3d-star.webp';
 
-function Polaroid({ imageSrc, caption, height, paperclip=false, star=false, tilt=false, rotate=true }) {
+function Polaroid({ imgSrc, altText, caption, height, paperclip=false, star=false, tilt=false, rotate=true }) {
     const polaroidRef = useRef(null);
 
     useEffect(() => {
@@ -38,7 +38,7 @@ function Polaroid({ imageSrc, caption, height, paperclip=false, star=false, tilt
     return (
         <div ref={polaroidRef} className={`polaroid ${rotate ? 'rotate-animation' : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className="polaroid-content">
-                <img src={imageSrc} alt={caption} className="polaroid-image" style={{ height: height }}/>
+                <img src={imgSrc} alt={altText} className="polaroid-image" style={{ height: height }}/>
                 {caption && <div className="polaroid-caption"><h2>{caption}</h2></div>}
             </div>
             {paperclip && <img src={paperclipImg} alt="paperclip" className="paperclip" draggable="false" />}

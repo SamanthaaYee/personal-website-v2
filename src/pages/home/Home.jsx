@@ -1,8 +1,17 @@
-import Polaroid from '/src/components/polaroid/Polaroid.jsx';
-import RansomHeading from '/src/components/ransom-heading/RansomHeading.jsx';
-import StickyNote from '/src/components/sticky-notes/StickyNote.jsx';
 import './Home.css';
-import profilePic from '/src/assets/images/profile-picture.jpg';
+
+import Polaroid from '../../components/polaroid/Polaroid';
+import StickyNote from '../../components/sticky-notes/StickyNote';
+import HoverableIcon from '../../components/hoverable-icon/HoverableIcon';
+
+import profileImg from '../../assets/images/profile-picture.jpg';
+import headphonesImg from '../../assets/images/headphones.png';
+
+const hoverableIcons = [
+  {
+    imgSrc: headphonesImg, altText:"headphones", text:"🎧 i have 1000+ songs saved on Spotify!"
+  }
+]
 
 function Home() {
   return (
@@ -12,7 +21,7 @@ function Home() {
         <h2 className="subheading"><mark>full-stack developer</mark> & <mark>systems design engineering</mark> student @ UWaterloo</h2>
       </div>
       <div className="home-container">
-        <Polaroid imageSrc={profilePic} height="27rem" caption="welcome to my website :)" paperclip={true} star={true} tilt={true} />
+        <Polaroid imgSrc={profileImg} altText="profile picture" height="27rem" caption="welcome to my website :)" paperclip={true} star={true} tilt={true} />
         <div className="stickies-container">
           <div className="stickies current-intro">
             <StickyNote color="yellow">
@@ -35,6 +44,7 @@ function Home() {
             </StickyNote>
           </div>
         </div>
+        <HoverableIcon icons={hoverableIcons} />
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
 import './Postcard.css';
-import postcardImage from '/src/assets/images/postcard.png';
-import tape from '/src/assets/images/tape.png';
-import airplane from '/src/assets/images/airplane.png';
+import postcardImg from '../../assets/images/postcard.png';
+import tapeImg from '../../assets/images/tape.png';
+import airplaneImg from '../../assets/images/airplane.png';
 
 function Postcard() {
     return (
         <div className="postcard-container">
-            <img src={postcardImage} className="postcard-image" alt="postcard image" style={{ height: '30rem' }} />
+            <img src={postcardImg} className="postcard-image" alt="postcard image" style={{ height: '30rem' }} />
             <p>want to work together? <br></br>send me a message! <br></br>hope to hear from you soon :)</p>
             <form className="contact-form" action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="855507b2-e06d-4e81-9cc8-7b3e20a795bc" />
@@ -20,8 +20,8 @@ function Postcard() {
 
                 <button type="submit">send postcard</button>
             </form>
-            <img src={tape} alt="tape" className="tape-image" draggable="false" />
-            <img src={airplane} alt="airplane" className="airplane-image" draggable="false" />
+            <img src={tapeImg} alt="tape" className="tape-image" draggable="false" />
+            <img src={airplaneImg} alt="airplane" className="airplane-image" draggable="false" />
         </div>
     )
 }

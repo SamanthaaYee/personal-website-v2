@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import './Navbar.css';
-import logo from '/src/assets/icons/s-stamp-grey.png';
-import activeLogo from '/src/assets/icons/s-stamp-navy.png';
+import logoIcon from '../../assets/icons/s-stamp-grey.png';
+import activeLogoIcon from '../../assets/icons/s-stamp-navy.png';
 
 function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
@@ -16,7 +16,7 @@ function Navbar() {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              {({isActive}) => <img src={(isActive || isHovered) ? activeLogo : logo} alt="logo" />}
+              {({isActive}) => <img src={(isActive || isHovered) ? activeLogoIcon : logoIcon} alt="logo" />}
             </NavLink>
         </div>
         <div className="nav-links">
