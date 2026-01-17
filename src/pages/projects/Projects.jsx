@@ -27,7 +27,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div>
+    <div className="projects-page-container">
       <div className="heading">
         <h1 className="sr-only">my projects</h1>
         <RansomHeading globalFontSize="3rem" />

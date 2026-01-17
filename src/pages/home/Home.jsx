@@ -11,7 +11,7 @@ import headphonesImg from '../../assets/images/headphones.png';
 
 function Home() {
   return (
-    <div>
+    <div className="home-page-container">
       <div>
         <h1 className="heading">hey, i'm samantha!</h1>
         <h2 className="subheading"><mark>full-stack developer</mark> based in Toronto & <mark>systems design engineering</mark> student @ UWaterloo</h2>

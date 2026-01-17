@@ -48,8 +48,12 @@ form.contact-form {
 .contact-form input, textarea {
     border: none;
     border-bottom: 1px solid var(--dark-grey);
-    font-family: var(--sharpie-font);
+    font-family: var(--serif-font);
     font-size: 1.1rem;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    font-family: var(--sharpie-font);
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
