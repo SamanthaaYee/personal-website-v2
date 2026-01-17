@@ -30,7 +30,7 @@ function Projects() {
     <div>
       <div className="heading">
         <h1 className="sr-only">my projects</h1>
-          <RansomHeading globalFontSize="3rem" />
+        <RansomHeading globalFontSize="3rem" />
       </div>
       <div className="projects-container">
         <ProjectCard projects={projects} />

@@ -75,3 +75,30 @@
 .tc.mlvx-11 { filter: drop-shadow(1px 1px 1px #666) }
 .tc.mlvx-11 div::before { background-image: url(https://www.ransomizer.com/img/texture/pwrAKPo.png); background-position: center center }
 .tc.mlvx-11 div { background-color: #019ecd;color: #ffffff; font-family: 'Alfa Slab One', serif; rotate: -3deg; top: 0.01em; clip-path: polygon(5% 7%,97% 6%,100% 15%,97% 94%,5% 100%,0 57%); font-size: 100%; margin: 0.1em; padding: 0.1em; text-shadow: -0.03em 0.03em #e6e6e6; -webkit-text-stroke: 0.03em #1a1a1a; paint-order: stroke fill; line-height: 75% ; position: relative; }
+
+
+/* tablet stylings */
+@media (max-width: 1024px) {
+
+}
+
+/* mobile stylings */
+@media (max-width: 767px) {
+    #ransomizer-krjakn46 .ts {
+      flex-direction: column;
+      align-items: center;
+      font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #ransomizer-krjakn46 .ts {
+      font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 350px) {
+    #ransomizer-krjakn46 .ts {
+      font-size: 1.6rem;
+    }
+}

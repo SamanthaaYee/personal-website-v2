@@ -4,3 +4,25 @@
     margin-block-start: 1rem;
     margin-block-end: 2rem;
 }
+
+/* tablet stylings */
+@media (max-width: 1024px) {
+
+}
+
+/* mobile stylings */
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 400px) {
+    .projects-container .polaroid-image {
+        height: 10rem !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .projects-container .polaroid-image {
+        height: 8rem !important;
+    }
+}

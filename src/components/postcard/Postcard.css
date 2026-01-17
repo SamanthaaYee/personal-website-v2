@@ -72,9 +72,9 @@ form.contact-form {
 }
 
 .postcard-container .tape-image {
-    top: -7%;
+    top: -5%;
     left: -7%;
-    width: 12rem;
+    width: 10rem;
     transform: scaleX(-1);
 }
 
@@ -83,4 +83,97 @@ form.contact-form {
     top: 20%;
     left: -20%;
     z-index: -1;
+}
+
+/* tablet stylings */
+@media (max-width: 1024px) {
+    .postcard-container img.postcard-image {
+        height: 28rem !important;
+    }
+
+    .postcard-container p {
+        font-size: 1.3rem;
+    }
+
+    form.contact-form {
+        width: 42%;
+    }
+
+    .contact-form input, textarea {
+        font-size: 1rem;
+    }
+
+    .postcard-container .airplane-image {
+        width: 50rem;
+    }
+}
+
+/* mobile stylings */
+@media (max-width: 767px) {
+    .postcard-container {
+        width: 100%;
+        /* overflow: hidden; */
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .postcard-content {
+        position: relative;
+        right: -7%;
+    }
+
+    .postcard-container p {
+        display: none;
+    }
+
+    form.contact-form {
+        width: 35%;
+        right: 10%;
+        bottom: 12%;
+        gap: 0.8rem;
+    }
+
+    .contact-form input, textarea {
+        font-size: 0.95rem;
+    }
+
+    .contact-form button {
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .postcard-container .tape-image {
+        top: -7%;
+        right: -4%;
+        transform: none;
+        left: auto;
+    }
+
+    .postcard-container .airplane-image {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    form.contact-form {
+        width: 30%;
+    }
+
+    .postcard-content {
+        right: -10%;
+    }
+
+    .postcard-container .tape-image {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .postcard-container img.postcard-image {
+        height: 27rem !important;
+    }
+
+    .postcard-content {
+        right: -10%;
+    }
 }

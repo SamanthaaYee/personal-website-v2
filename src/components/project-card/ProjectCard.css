@@ -68,3 +68,20 @@ p.project-description {
 .project-card mark {
     background-color: var(--project-highlight-color, var(--navy-highlight)) !important;
 }
+
+/* tablet stylings */
+@media (max-width: 1024px) {
+    .project-card-container {
+        width: 100%;
+    }
+
+    .project-card {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* mobile stylings */
+@media (max-width: 767px) {
+    
+}

@@ -57,3 +57,18 @@ footer p {
 .icon.linkedin:hover {
   background-image: url('../../assets/icons/linkedin-navy.png');
 }
+
+/* tablet stylings */
+@media (max-width: 1024px) {
+    
+    
+}
+
+/* mobile stylings */
+@media (max-width: 767px) {
+    footer {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+}

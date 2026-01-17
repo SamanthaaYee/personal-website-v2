@@ -49,3 +49,15 @@ img.star {
     left: -30px;
     transform: rotate(var(--polaroid-rotate));
 }
+
+/* tablet stylings */
+@media (max-width: 1024px) {
+    
+
+    
+}
+
+/* mobile stylings */
+@media (max-width: 767px) {
+    
+}

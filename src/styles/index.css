@@ -38,7 +38,7 @@ body {
     background-size: 20px 20px;
 
     color: var(--dark-grey);
-    margin: 2rem 7rem 0 7rem;
+    margin: 2rem 7rem 2rem 7rem;
     font-family: var(--serif-font);
     font-size: 1.2rem;
 }
@@ -99,4 +99,24 @@ mark {
 
 .show-on-hover.visible {
     opacity: 1;
+}
+
+/* tablet stylings */
+@media (max-width: 1024px) {
+    
+
+    
+}
+
+/* mobile stylings */
+@media (max-width: 767px) {
+    body{
+        margin: 1rem 3.5rem 1rem 3.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    body{
+        margin: 1rem 2.5rem 1rem 2.5rem;
+    }
 }

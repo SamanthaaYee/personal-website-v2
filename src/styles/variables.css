@@ -1,5 +1,6 @@
 :root {
     /* colours */
+    --tan: #F6EEE3;
     --tan-bg: #F6EEE375;
     --dark-grey: #212121;
     --navy: #3e4c7a;
@@ -36,6 +37,8 @@
     --infinity: 99999px;
 
     /* breakpoints */
-    --bp-mobile: 768px;
     --bp-tablet: 1024px;
+    --bp-mobile: 767px;
+    --bp-mobile-xs: 400px;
+    --bp-mobile-xxs: 350px;
 }

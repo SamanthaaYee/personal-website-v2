@@ -2,7 +2,7 @@ import "./RansomHeading.css";
 
 function RansomHeading({ globalFontSize }) {
   return (
-    <div>
+    <div className="ransom-heading-container">
         <div
         id="ransomizer-krjakn46"
         style={{
