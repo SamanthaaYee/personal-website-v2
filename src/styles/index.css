@@ -62,6 +62,7 @@ mark {
     color: var(--dark-grey);
     border-radius: var(--infinity);
     background-color: var(--navy-highlight);
+    box-decoration-break: clone;
 }
 
 .sr-only {
