@@ -1,7 +1,8 @@
 import './HoverableIcon.css';
 import React, { useRef, useEffect } from 'react';
 
-function HoverableIcon({ icons }) {
+function HoverableIcon({ imgSrc, altText, emoji, text, height = '8rem' }) {
+    const [isHovering, setIsHovering] = React.useState(false);
     const hoverableIconRef = useRef(null);
 
     useEffect(() => {
@@ -10,20 +11,27 @@ function HoverableIcon({ icons }) {
             hoverableIconRef.current.style.setProperty('--hoverable-icon-rotate', hoverRotateDeg);
         }
     }, []);
-    // const handleMouseEnter = () => {
-    //     if (hoverableIconRef.current) {
-    //         document.documentElement.style.setProperty('--hover-text', `"${text}"`);
-    //     }
-    // };
+
+    const handleMouseEnter = () => {
+        setIsHovering(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovering(false);
+    };
 
     return (
-        <div ref={hoverableIconRef} className="hoverable-icon-container">
-            {icons.map((icon, index) => (
-                <div key={index} className="icon-group">
-                    <img src={icon.imgSrc} alt={icon.altText} className="hoverable-icon" draggable="false" style={{ height: "10rem" }} />
-                    <div className="show-on-hover hover-text">{icon.text}</div>
-                </div>
-            ))}
+        <div 
+            ref={hoverableIconRef}
+            className="hoverable-icon-wrapper"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+        >
+            <img src={imgSrc} alt={altText} className="hoverable-icon" draggable="false" style={{ height }} />
+            <div className={`show-on-hover hover-text ${isHovering ? 'visible' : ''}`}>
+                {emoji && <span className="emoji">{emoji}</span>}
+                {text && <span className="text">{text}</span>}
+            </div>
         </div>
     )
 }

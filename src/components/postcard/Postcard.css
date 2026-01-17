@@ -3,11 +3,15 @@
 .postcard-container {
     position: relative;
     width: max-content;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
-.postcard-container:hover {
+.postcard-content:hover {
     transform: scale(1.01);
+}
+
+.postcard-container img.postcard-image {
+    box-shadow: var(--paper-shadow);
 }
 
 .postcard-container img.postcard-image {
@@ -63,18 +67,18 @@ form.contact-form {
     font-size: 0.9rem;
 }
 
-.tape-image, .airplane-image {
+.postcard-container .tape-image, .airplane-image {
     position: absolute;
 }
 
-.tape-image {
+.postcard-container .tape-image {
     top: -7%;
     left: -7%;
     width: 12rem;
     transform: scaleX(-1);
 }
 
-.airplane-image {
+.postcard-container .airplane-image {
     width: 65rem;
     top: 20%;
     left: -20%;

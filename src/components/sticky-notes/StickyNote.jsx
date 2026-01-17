@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './StickyNote.css';
+import tapeImg from '../../assets/images/tape.png';
 
 const STICKY_COLORS = {
   yellow: "var(--sticky-yellow)",
@@ -7,7 +8,7 @@ const STICKY_COLORS = {
   blue: "var(--sticky-blue)",
 };
 
-function StickyNote({ color = "yellow", children }) {
+function StickyNote({ color = "yellow", children, tape = false }) {
   const stickyRef = useRef(null);
   
       useEffect(() => {
@@ -35,6 +36,7 @@ function StickyNote({ color = "yellow", children }) {
       <div className="sticky-content">
         {children}
       </div>
+      {tape && <img src={tapeImg} alt="tape" className="tape-image" draggable="false" />}
     </div>
   );
 }

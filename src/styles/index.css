@@ -91,3 +91,12 @@ mark {
 .zoom-animation:hover {
     transform: scale(1.05);
 }
+
+.show-on-hover {
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.show-on-hover.visible {
+    opacity: 1;
+}

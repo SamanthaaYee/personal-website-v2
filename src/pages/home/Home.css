@@ -4,7 +4,7 @@ h1.heading {
 
 h2.subheading {
     margin-top: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .home-container {
@@ -19,6 +19,24 @@ h2.subheading {
     gap: 4rem;
 }
 
-.home-container .stickies-container .previous-intro {
+.home-container .stickies-container .previous-intro-container {
     align-self: flex-end;
+}
+
+.hoverable-icon-position {
+    position: absolute;
+    left: 80%;
+    top: 15%;
+}
+
+.arrow-icon {
+    position: relative;
+    bottom: 80%;
+    right: 5%;
+}
+
+.exclamation-lines-icon {
+    position: relative;
+    top: 20px;
+    left: 100%;
 }

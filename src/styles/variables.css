@@ -4,12 +4,17 @@
     --dark-grey: #212121;
     --navy: #3e4c7a;
     --navy-highlight: #596dab50;
+    --yellow: #FFDC74;
     --yellow-highlight: #FFDC7450;
-    --pink-highlight: #F3A6C850;
-    --blue-highlight: #95C8F350;
+    --pink: #fe6996;
+    --pink-highlight: #fe699650;
+    --blue: #019ecd;
+    --blue-highlight: #019ecd50;
+    --green: #79a203;
+    --green-highlight: #79a20350;
 
-    --sticky-yellow: #FEF8AC;
-    --sticky-pink: #FBE3F0;
+    --sticky-yellow: #feff9c;
+    --sticky-pink: #feb1d3;
     --sticky-blue: #CCEDFF;
 
     /* shadows */
@@ -27,5 +32,10 @@
     --serif-font: 'Crimson Text', serif;
     --sharpie-font: 'Walter Turncoat', cursive;
 
+    /* border radius */
     --infinity: 99999px;
+
+    /* breakpoints */
+    --bp-mobile: 768px;
+    --bp-tablet: 1024px;
 }

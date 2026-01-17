@@ -13,13 +13,13 @@
     border: 1px solid #212121;
     border-radius: 20px;
     align-items: center;
-    box-shadow: -10px 10px var(--navy);
+    box-shadow: -10px 10px var(--project-shadow-color, var(--navy));
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .project-card:hover {
     transform: scale(1.02);
-    box-shadow: -15px 15px var(--navy);
+    box-shadow: -15px 15px var(--project-shadow-color, var(--navy));
 }
 
 .project-info h2 {
@@ -63,4 +63,8 @@
 
 p.project-description {
     font-size: 1.1rem;
+}
+
+.project-card mark {
+    background-color: var(--project-highlight-color, var(--navy-highlight)) !important;
 }

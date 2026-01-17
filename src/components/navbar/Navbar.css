@@ -57,7 +57,7 @@ nav a:visited {
         var(--highlight-color) 100%
     ); 
     background-repeat: no-repeat;
-    /* transition: background-size 0.3s ease-in-out;  */
+    transition: background-size 0.3s ease-in-out; 
     background-size: 0% 100%; 
     background-position: 0% 100%; 
 }
