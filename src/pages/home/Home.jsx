@@ -18,7 +18,7 @@ function Home() {
       </div>
       <div className="home-container">
         <div>
-          <img src={arrowImg} alt="arrow" draggable="false" style={{ height: "3rem" }} className="arrow-icon" />
+          <img src={arrowImg} alt="arrow" draggable={false} style={{ height: "3rem" }} className="arrow-icon" />
           <Polaroid imgSrc={profileImg} altText="profile picture" height="27rem" caption="welcome to my website :)" paperclip={true} star={true} tilt={true} />
         </div>
         <div className="stickies-container">

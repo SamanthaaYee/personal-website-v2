@@ -114,10 +114,18 @@ mark {
     body{
         margin: 1rem 3.5rem 1rem 3.5rem;
     }
+
+    .hide-on-767 {
+        display: none;
+    }
 }
 
 @media (max-width: 400px) {
     body{
         margin: 1rem 2.5rem 1rem 2.5rem;
+    }
+
+    .hide-on-400 {
+        display: none;
     }
 }

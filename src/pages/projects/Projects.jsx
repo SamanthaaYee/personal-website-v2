@@ -9,12 +9,12 @@ import loveboxdImg from '../../assets/images/loveboxd.png';
 
 const projects = [
   {
-    title: 'sundial', image: sundialImg, skills: ['React', 'Node.js', 'Express'], color: '',
+    title: 'sundial', image: sundialImg, skills: ['React', 'Express'], color: '',
     description: 'A full-stack web app connecting to Spotify’s API to play and control music directly in the browser using React for interactive front-end, and Node & Express for back-end functionality', 
     link:"https://github.com/SamanthaaYee/sundial"
   },
   {
-    title: 'connectivIT', image: connectivitImg, skills: ['HTML', 'CSS', 'JavaScript'], color: '',
+    title: 'connectivIT', image: connectivitImg, skills: ['HTML', 'CSS', 'JavaScript', 'SQL'], color: '',
     description: "A program designed to donate electronic devices to rural, low-income areas, focusing on Indigenous reserves",
     link:"https://devpost.com/software/connectivit?ref_content=my-projects-tab&ref_feature=my_projects"
   },

@@ -5,5 +5,113 @@
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    gap: 6rem;
+    min-height: 35rem;
+}
+
+.stamp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
+    min-height: inherit;
+    justify-content: center;
+}
+
+.stamp-container p {
+    font-family: var(--sharpie-font);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.stamp-container .arrow-icon {
+    transform: scaleX(-1);
+    position: relative;
+    left: 80%;
+    top: 22%;
+}
+
+.stamp-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: -2rem;
+}
+
+
+img.stamp {
+    width: 6.8rem;
+    cursor: grab;
+    user-select: none;
+}
+
+img.stamp:active {
+    cursor: grabbing;
+}
+
+img.stamp-2 {
+    left: 20%;
+    position: relative;
+}
+
+
+/* laptop stylings */
+@media (max-width: 1400px) {
+    .contact-page-container {
+        gap: 3rem;
+    }
+    
+}
+
+
+/* tablet stylings */
+@media (max-width: 1024px) {
+    .contact-page-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .stamp-container {
+        min-height: auto;
+        gap: 3.5rem;
+        align-items: flex-end;
+    }
+
+    .stamp-container .arrow-icon {
+        left: 70%;
+        top: 25%;
+    }
+
+    .stamp-imgs {
+        flex-direction: row;
+    }
+
+    img.stamp {
+        margin-top: 0 !important;
+    }
+
+    img.stamp-2 {
+        left: 0;
+        bottom: 20px;
+        position: relative;
+    }
+}
+
+/* mobile stylings */
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 400px) {
+
+}
+
+@media (max-width: 350px) {
+    .stamp-container {
+        align-items: center;
+    }
+
+    .stamp-imgs {
+        gap: 0;
+    }
 }

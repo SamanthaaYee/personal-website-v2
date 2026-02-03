@@ -37,6 +37,7 @@
     --infinity: 99999px;
 
     /* breakpoints */
+    --bp-laptop-s: 1400px;
     --bp-tablet: 1024px;
     --bp-mobile: 767px;
     --bp-mobile-xs: 400px;

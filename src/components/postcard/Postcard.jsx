@@ -21,9 +21,9 @@ function Postcard() {
 
                     <button type="submit">send postcard</button>
                 </form>
-                <img src={tapeImg} alt="tape" className="tape-image" draggable="false" />
+                <img src={tapeImg} alt="tape" className="tape-image hide-on-400" draggable="false" />
             </div>
-            <img src={airplaneImg} alt="airplane" className="airplane-image" draggable="false" />
+            <img src={airplaneImg} alt="airplane" className="airplane-image hide-on-767" draggable="false" />
         </div>
     )
 }
