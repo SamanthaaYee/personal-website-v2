@@ -1,3 +1,4 @@
-# personal website v2
+# ☁️ personal website v2
 
-Revamped my website using React, Node.js :)
+revamped my website using React 😆
+check it out: https://samantha-yee.com/
