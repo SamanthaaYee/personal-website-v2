@@ -4,7 +4,7 @@ import Polaroid from '../../components/polaroid/Polaroid';
 import StickyNote from '../../components/sticky-notes/StickyNote';
 import HoverableIcon from '../../components/hoverable-icon/HoverableIcon';
 
-import profileImg from '../../assets/images/profile-picture.jpg';
+import profileImg from '../../assets/images/profile-picture2.jpg';
 import arrowImg from '../../assets/images/arrow.png';
 import exclamationLinesImg from '../../assets/images/exclamation-lines.png';
 import headphonesImg from '../../assets/images/headphones.png';
@@ -26,9 +26,9 @@ function Home() {
             <StickyNote color="yellow" tape={true}>
               <h4>currently i’m...</h4>
               <ul>
-                <li>in my third year</li>
-                <li>building this site lol</li>
-                <li>looking for summer 2026 internships and full time roles for 2027 in front-end/full-stack dev & SWE - <a href="mailto:sayee@uwaterloo.ca">reach out!</a></li>
+                <li>in my third year at the University of Waterloo</li>
+                <li>building front-end experiences @ Faire</li>
+                <li>looking for new grad 2027 roles in full-stack dev & SWE → <a href="mailto:sayee@uwaterloo.ca">reach out!</a></li>
               </ul>
             </StickyNote>
           </div>
@@ -36,7 +36,7 @@ function Home() {
             <img src={exclamationLinesImg} alt="exclamation lines" className="exclamation-lines-icon" draggable="false"  style={{ height: "4rem" }} />
             <div className="stickies previous-intro">
               <StickyNote color="pink">
-                <h4>previously i've...</h4>
+                <h4>previously i...</h4>
                 <ul>
                   <li>developed React components @ AGF Investments</li>
                   <li>built Shopify e-commerce features @ Apricotton</li>
