@@ -116,7 +116,7 @@ mark {
     }
 
     .hide-on-767 {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -126,6 +126,6 @@ mark {
     }
 
     .hide-on-400 {
-        display: none;
+        display: none !important;
     }
 }

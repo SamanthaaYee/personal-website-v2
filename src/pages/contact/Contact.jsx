@@ -4,7 +4,6 @@ import stamp1Img from '../../assets/images/stamp1.png';
 import stamp2Img from '../../assets/images/stamp2.png';
 import stamp3Img from '../../assets/images/stamp3.png';
 import arrowImg from '../../assets/images/arrow.png';
-
 import Postcard from '../../components/postcard/Postcard';
 
 function Contact() {
@@ -67,7 +66,7 @@ function Contact() {
             <img src={arrowImg} alt="arrow image" draggable={false} style={{ width: "2.5rem" }} className="arrow-icon"/>
           </div>
           <div>
-            <div className="stamp-imgs">
+            <div className="stamp-imgs hide-on-767">
               {stamps.filter(s => !s.position).map((stamp, index) => (
                 <img 
                   key={stamp.id}
